@@ -1,0 +1,7 @@
+ipykernel
+ipython
+matplotlib
+numpy
+pandas
+scipy
+emcee==3.1.6
