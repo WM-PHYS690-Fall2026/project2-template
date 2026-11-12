@@ -1,6 +1,6 @@
 # Project 2: Bayesian Constraints on Dark Energy with Pantheon+
 
-Starter repository for PHYS690 Project 2. Use Type Ia supernova distances to compare a flat ΛCDM expansion history with a flat time-varying dark-energy model, then use Bayesian inference to quantify the joint and marginalized uncertainty in the cosmological parameters.
+Starter repository for PHYS690 Project 2. Use Type Ia supernova distances to compare a flat $\Lambda\mathrm{CDM}$ expansion history with a flat time-varying dark-energy model, then use Bayesian inference to quantify the joint and marginalized uncertainty in the cosmological parameters.
 
 This project continues the supernova Hubble-diagram work from Assignment 2. The new analysis uses the public Pantheon+ distance data and its full statistical-plus-systematic covariance matrix. A central goal is to understand why a nonlinear multi-parameter model can have correlated, non-Gaussian parameter constraints, and what MCMC adds beyond a best fit and local covariance matrix.
 
@@ -32,7 +32,7 @@ On Windows Git Bash use `source .venv/Scripts/activate`. Select the `.venv` kern
 
 ## Scientific question
 
-Do the Pantheon+ Type Ia supernova distances constrain a constant dark-energy equation of state as well as a time-varying one? Compare a flat ΛCDM model ($w=-1$) and a flat $w_0w_a$CDM model,
+Do the Pantheon+ Type Ia supernova distances constrain a constant dark-energy equation of state as well as a time-varying one? Compare a flat $\Lambda\mathrm{CDM}$ model ($w=-1$) and a flat $w_0w_a\mathrm{CDM}$ model,
 
 $$w(a)=w_0+w_a(1-a),$$
 
@@ -68,14 +68,14 @@ Data are downloaded automatically to `data/raw/` when absent. Do not commit down
 
 - Inspect columns, redshift coverage, magnitude range, missing values, and covariance matrix; explain why diagonal error bars alone are not the fitting uncertainty.
 - Plot the Hubble diagram and a useful view of the covariance (for example, its correlation matrix).
-- Implement the luminosity-distance prediction for flat $w_0w_a$CDM and document numerical integration choices.
-- Fit a baseline flat ΛCDM model and a flat $w_0w_a$CDM model. State parameter bounds and priors before interpreting posterior results.
+- Implement the luminosity-distance prediction for flat $w_0w_a\mathrm{CDM}$ and document numerical integration choices.
+- Fit a baseline flat $\Lambda\mathrm{CDM}$ model and a flat $w_0w_a\mathrm{CDM}$ model. State parameter bounds and priors before interpreting posterior results.
 - Construct a Gaussian likelihood using the full covariance and compare the maximum-likelihood or maximum-a-posteriori point with the posterior distribution.
 - Use `emcee.EnsembleSampler` with at least 48 walkers for the four-parameter posterior. Run burn-in, reset the stored burn-in samples while retaining the final walker state, then run production steps as in Lecture 18.
 - Run at least four independently seeded ensembles. Inspect walker traces, per-walker acceptance fractions, integrated autocorrelation time, effective sample size, and split $\widehat R$ across independent ensembles before reporting intervals. Walkers within one ensemble interact and should not be presented as independent chains.
 - Display joint posterior contours and marginalized distributions. Report central 68% and 95% posterior intervals for $\Omega_m$, $w_0$, and $w_a$; explain asymmetry or strong correlation.
 - Assess prior sensitivity in the weakly constrained $w_a$ direction by comparing the broad uniform prior with a narrower uniform range. State how many broad-prior draws lie in the narrower range and interpret the conditional posterior carefully.
-- Compare the time-varying model constraints with the nested ΛCDM result. Explain what the comparison establishes and what it does not: a broader posterior for extra parameters is not itself evidence that the model is better, and this project does not compute a Bayes factor.
+- Compare the time-varying model constraints with the nested $\Lambda\mathrm{CDM}$ result. Explain what the comparison establishes and what it does not: a broader posterior for extra parameters is not itself evidence that the model is better, and this project does not compute a Bayes factor.
 - Perform a posterior predictive check in distance-modulus space and state which model failures it can and cannot reveal.
 - Discuss limitations, including the fixed-$H_0$/intercept degeneracy, supernova standardization, covariance assumptions, and the fact that this is not a complete reproduction of the Pantheon+ collaboration analysis.
 
