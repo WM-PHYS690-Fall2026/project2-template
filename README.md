@@ -111,7 +111,7 @@ The notebook is the guided analysis. The script is a separate reproducibility de
 - Course lectures: https://github.com/jrstevenjlab/gradcompphys/tree/main/lectures
 - Lecture 17, Bayesian inference: https://github.com/jrstevenjlab/gradcompphys/blob/main/lectures/lecture17_11_5_26_bayesian_inference.ipynb
 - Lecture 18, `emcee` production sampling: https://github.com/jrstevenjlab/gradcompphys/blob/main/lectures/lecture18_11_10_26_mcmc.ipynb
-- Lecture 19, model checking: https://github.com/jrstevenjlab/gradcompphys/blob/main/lectures/lecture19_11_12_26_model_checking_flows.ipynb
+- Lecture 19, `emcee` diagnostics: https://github.com/jrstevenjlab/gradcompphys/blob/main/lectures/lecture19_11_17_26_mcmc_diagnostics.ipynb
 
 ## Submission
 
